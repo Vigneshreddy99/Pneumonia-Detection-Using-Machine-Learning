@@ -1,0 +1,51 @@
+# Configuration file for Pneumonia Detection System
+
+# Data Configuration
+data:
+  train_dir: "data/train"
+  test_dir: "data/test"
+  val_dir: "data/val"
+  img_height: 224
+  img_width: 224
+  batch_size: 32
+  classes: ["NORMAL", "PNEUMONIA_BACTERIAL", "PNEUMONIA_VIRAL"]
+
+# Model Configuration
+model:
+  name: "VGG16_Pneumonia_Classifier"
+  base_model: "VGG16"
+  weights: "imagenet"
+  include_top: false
+  freeze_base: true
+  dense_units: [512, 256]
+  dropout_rate: 0.5
+  activation: "relu"
+  output_activation: "softmax"
+
+# Training Configuration
+training:
+  epochs: 25
+  learning_rate: 0.0001
+  optimizer: "adam"
+  loss: "categorical_crossentropy"
+  metrics: ["accuracy"]
+  early_stopping_patience: 5
+  reduce_lr_patience: 3
+  checkpoint_path: "models/best_model.h5"
+
+# Data Augmentation
+augmentation:
+  rescale: 0.00392156862745098  # 1/255
+  shear_range: 0.2
+  zoom_range: 0.2
+  horizontal_flip: true
+  rotation_range: 20
+  width_shift_range: 0.2
+  height_shift_range: 0.2
+
+# Deployment
+deployment:
+  model_path: "models/pneumonia_model.h5"
+  confidence_threshold: 0.7
+  app_title: "Pneumonia Detection System"
+  app_icon: "🏥"
