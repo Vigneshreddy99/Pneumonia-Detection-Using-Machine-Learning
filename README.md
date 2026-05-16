@@ -7,16 +7,16 @@
 
 An AI-powered system for detecting pneumonia from chest X-ray images using deep learning. The system leverages the VGG16 architecture pre-trained on ImageNet to classify X-rays into three categories: **Normal**, **Bacterial Pneumonia**, and **Viral Pneumonia**.
 
-## 🌟 Features
+## Features
 
-- ✅ **Deep Learning Model**: VGG16-based architecture with custom classification layers
-- ✅ **High Accuracy**: Achieves excellent performance on pneumonia detection
-- ✅ **Web Interface**: User-friendly Streamlit application for real-time predictions
-- ✅ **Data Augmentation**: Comprehensive image preprocessing and augmentation
-- ✅ **Model Evaluation**: Detailed metrics including precision, recall, F1-score, and confusion matrix
-- ✅ **Professional Code**: Well-structured, documented, and production-ready
+-  **Deep Learning Model**: VGG16-based architecture with custom classification layers
+-  **High Accuracy**: Achieves excellent performance on pneumonia detection
+-  **Web Interface**: User-friendly Streamlit application for real-time predictions
+-  **Data Augmentation**: Comprehensive image preprocessing and augmentation
+-  **Model Evaluation**: Detailed metrics including precision, recall, F1-score, and confusion matrix
+-  **Professional Code**: Well-structured, documented, and production-ready
 
-## 📊 Model Architecture
+##  Model Architecture
 
 ```
 Input (224x224x3)
@@ -32,7 +32,7 @@ Dense Layer (256 units) + Dropout
 Output Layer (3 classes - Softmax)
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -136,7 +136,7 @@ The application will open in your browser at `http://localhost:8501`
 - Interactive visualization of class probabilities
 - Adjustable confidence threshold
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Pneumonia-Detection-Using-Machine-Learning/
@@ -180,7 +180,7 @@ Edit `config.yaml` to customize:
 - **Augmentation**: Rotation, zoom, shift ranges
 - **Deployment**: Model path, confidence threshold
 
-## 📊 Results
+##  Results
 
 The model achieves excellent performance on the test dataset:
 
@@ -215,18 +215,18 @@ The model achieves excellent performance on the test dataset:
 - F1-Score
 - Confusion Matrix
 
-## 🎯 Use Cases
+##  Use Cases
 
 - **Medical Screening**: Assist radiologists in preliminary pneumonia detection
 - **Research**: Study pneumonia patterns in chest X-rays
 - **Education**: Learn about medical image classification
 - **Telemedicine**: Remote diagnosis support tool
 
-## ⚠️ Medical Disclaimer
+##  Medical Disclaimer
 
 **IMPORTANT**: This tool is for educational and research purposes only. It should **NOT** be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for medical decisions.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -236,32 +236,24 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+##  Author
 
 **Vignesh Reddy**
 - GitHub: [@Vigneshreddy99](https://github.com/Vigneshreddy99)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Dataset: [Chest X-Ray Pneumonia Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 - VGG16 Architecture: [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)
 - TensorFlow and Keras teams
 - Streamlit for the amazing web framework
 
-## 📚 References
+## References
 
 1. Simonyan, K., & Zisserman, A. (2014). Very deep convolutional networks for large-scale image recognition.
 2. Kermany, D. S., et al. (2018). Identifying medical diagnoses and treatable diseases by image-based deep learning.
 3. Rajpurkar, P., et al. (2017). CheXNet: Radiologist-level pneumonia detection on chest X-rays with deep neural networks.
-
-## 📧 Contact
-
-For questions or feedback, please open an issue on GitHub or contact the author.
-
----
-
-⭐ If you find this project helpful, please consider giving it a star!
